@@ -1,0 +1,102 @@
+<div class="grid">
+
+
+
+  <div class="col-12">
+    <div class="text-center p-3    border-round-sm bg-black-alpha-10 font-bold"></div>
+</div>
+<div class="col-12">
+    <div class="text-center    text-xs  p-1 border-round-sm bg-black-alpha-10 font-bold ">
+      <!-- <button>Add Customer</button> -->
+      Add Customer
+    </div>
+</div>
+
+
+</div>
+
+
+<div class="grid ml-6 mt-6 mr-6">
+
+<!-- Grid form -->
+
+<div class="formgrid grid">
+  <div class="field col-12 md:col-4 ">
+      <label for="contactname">Contact Name</label>
+      <input id="contactname" [formControl]="contactName"  type="text" class="text-base text-color bg-white-alpha-30 p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+  </div>
+
+
+
+<div class="field-col-12 md:col-4 ">
+  <label for="phonenumber">Phone Number</label>
+  <input id="phonenumber" [formControl]="phoneNo" type="string" rows="4"  class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+</div>
+
+<div class="field-col-12 md:col-4 ">
+  <label for="email">Email</label>
+  <input id="phonenumber" [formControl]="email" type="email" rows="4"  class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+</div>
+
+
+  <div class="field col-12 md:col-4 ">
+      <label for="addressLine1">Address Line 1</label>
+      <textarea id="addressLine1" [formControl]="addressLine1" type="text" rows="4" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full"></textarea>
+  </div>
+  <div class="field col-12 md:col-4 ">
+    <label for="addressLine2">Address Line 2</label>
+    <textarea id="addressLine2" [formControl]="addressLine2" type="text" rows="4" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full"></textarea>
+</div>
+
+
+
+  <div class="field col-12 md:col-4 ">
+      <label for="city">City</label>
+      <select id="city" [formControl]="city" class="w-full text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round outline-none focus:border-primary" style="appearance: auto">
+        <option>Chennai</option>
+        <option>Salem</option>
+        <option>Madurai</option>
+        <option>Coimbatore</option>
+        <option>Thanjavur</option>
+    </select>
+  </div>
+  <div class="field col-12 md:col-3 form-group">
+      <label for="state">State</label>
+      <select id="state" [formControl]="state" class="w-full text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round outline-none focus:border-primary" style="appearance: auto">
+          <option>Tamil nadu</option>
+          <option>Gujarat</option>
+          <option>Kerala</option>
+          <option>Telangana</option>
+          <option>West bengal</option>
+      </select>
+  </div>
+  <div class="field col-12 md:col-3 form-group">
+      <label for="country">Country</label>
+      <select id="state" [formControl]="country"  class="w-full text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round outline-none focus:border-primary" style="appearance: auto">
+        <option>India</option>
+        <option>USA</option>
+        <option>Japan</option>
+        <option>Italy</option>
+        <option>united Kingdom</option>
+    </select>
+  </div>
+</div>
+
+
+<div class="text-base  mt-6 ml-2 form-group" >
+<p-button label="Add Customer" (click)="onSubmit()" class="text-base mt-8 pt-6 "></p-button>
+<p-button label="Login" (click)="doLoginAndGetToken()" class="text-base mt-8 pt-6 "></p-button>
+
+</div>
+
+
+</div>
+
+<div class="col-12 form-group">
+  <div class="text-center p-1  text-xs  mt-7 border-round-sm bg-black-alpha-10 font-bold">
+    Copyright
+    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="53" height="20" id="copyright"><path d="M1278 1074v109q0 50-36.5 89t-94 60.5-118 32.5-117.5 11q-205 0-342.5-139T432 891q0-203 136-339t339-136q34 0 75.5 4.5t93 18 92.5 34 69 56.5 28 81v109q0 16-16 16h-118q-16 0-16-16v-70q0-43-65.5-67.5T912 557q-140 0-228.5 91.5T595 886q0 151 91.5 249.5T920 1234q68 0 138-24t70-66v-70q0-7 4.5-11.5t10.5-4.5h119q6 0 11 4.5t5 11.5zM896 256q-130 0-248.5 51t-204 136.5-136.5 204T256 896t51 248.5 136.5 204 204 136.5 248.5 51 248.5-51 204-136.5 136.5-204 51-248.5-51-248.5-136.5-204-204-136.5T896 256zm768 640q0 209-103 385.5T1281.5 1561 896 1664t-385.5-103T231 1281.5 128 896t103-385.5T510.5 231 896 128t385.5 103T1561 510.5 1664 896z"></path></svg> -->
+    of S.i Systems, 2023
+
+  </div>
+</div>
