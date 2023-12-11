@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { ApiSerivce } from '../api.service';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -21,7 +22,7 @@ export class AddcustomerComponentComponent {
   state = new FormControl();
   country = new FormControl();
 
-  constructor(private http: HttpClient, private api: ApiSerivce) { }
+  constructor(private http: HttpClient, private api: ApiSerivce, private router: Router) { }
 
 
   onSubmit() {
@@ -54,8 +55,12 @@ export class AddcustomerComponentComponent {
     ).subscribe(
       resData => {
         console.log("resData", resData);
+        console.log("resdata.contactid=", resData.contactId);
+        this.router.navigate(['customers/' + resData.contactId])
       }
-    )
+    );
+
+
 
 
   }

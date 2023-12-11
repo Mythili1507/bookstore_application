@@ -11,11 +11,15 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { AddcustomerComponentComponent } from './addcustomer-component/addcustomer-component.component';
 import { ApiSerivce } from './api.service';
+import { AppRoutingModule } from './app-routing.module';
+import { ViewCustomerComponent } from './view-customer/view-customer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AddcustomerComponentComponent,
+    ViewCustomerComponent
+
 
   ],
   imports: [
@@ -23,7 +27,8 @@ import { ApiSerivce } from './api.service';
     BrowserModule,
     ButtonModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    AppRoutingModule
 
 
   ],
